@@ -1,0 +1,17 @@
+{
+  "name": "Cyborg Tests Demo",
+  "image": "mcr.microsoft.com/playwright:v1.53.0-jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "npm install && npx playwright install chromium",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright"
+      ]
+    }
+  },
+  "forwardPorts": [9323],
+  "remoteUser": "pwuser"
+}
