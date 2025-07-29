@@ -7,8 +7,7 @@ ports:
 
 tasks:
   - init: |
-      chmod +x ./start.sh
       npm install
       npx playwright install chromium
   - command: |
-      ./start.sh
+      bash ./start.sh
