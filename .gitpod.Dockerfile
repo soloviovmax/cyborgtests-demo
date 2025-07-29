@@ -7,5 +7,3 @@ RUN sudo apt-get update && sudo apt-get install -y \
     && sudo rm -rf /var/lib/apt/lists/*
 
 USER gitpod
-
-RUN gp code --install-extension ms-playwright.playwright
