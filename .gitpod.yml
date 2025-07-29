@@ -8,5 +8,6 @@ ports:
 tasks:
   - init: |
       npm install
+      npx playwright install chromium
   - command: |
-      bash ./start.sh
+      npm run test
