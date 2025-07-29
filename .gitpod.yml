@@ -6,8 +6,7 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - init: |
+  - command: |
       npm install
       npx playwright install chromium
-  - command: |
       npm run test
