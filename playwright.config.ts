@@ -15,4 +15,7 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
   ],
+  reporter: [
+    ['html', { open: 'always' }],
+  ],
 });

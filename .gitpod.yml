@@ -5,6 +5,14 @@ ports:
   - port: 6080
     onOpen: open-preview
 
+vscode:
+  extensions:
+    - ms-playwright.playwright
+  settings:
+    docker.showStartPage: false
+    extensions.ignoreRecommendations: true
+    gitpod.portPrompt: never
+
 tasks:
   - init: |
       npm install
